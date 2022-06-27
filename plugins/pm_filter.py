@@ -439,10 +439,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "about":
         buttons = [[
             InlineKeyboardButton('.｡.✿ ᴇᴅɪᴛᴏʀ', url='https://t.me/evil_angel_tg'),
-            InlineKeyboardButton('Source ✿.｡.', callback_data='source')
+            InlineKeyboardButton('ꜱᴏᴜʀᴄᴇ ✿.｡.', url='https://t.me/nokkiyirunno_ippo_kittum')
         ], [
             InlineKeyboardButton('.｡.✿ ʜᴏᴍᴇ', callback_data='start'),
-            InlineKeyboardButton('close ✿.｡.', callback_data='close_data')
+            InlineKeyboardButton('ᴄʟᴏꜱᴇ ✿.｡.', callback_data='close_data')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
